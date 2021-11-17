@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+{% load static %}
+<img src="{% static 'covidcare4.png' %}" alt="COVID Care Logo">
+<h1>Symptom Recorder</h1>
+<p><button>Press to transcribe audio</button></p>
+<p><textarea id="symptomtext" name="symptomtext" cols="40" rows="10"></textarea></p>
+<p>When did you feel this way?</p>
+<select id="symptomtime" name="symptomtime">
+	<option selected>Now</option>
+	<option>Minutes ago</option>
+	<option>Hours ago</option>
+	<option>Yesterday</option>
+	<option>Before yesterday</option>
+</select>
+<p><button type="submit">Record Symptoms</button></p>
+</body>
+</html>
