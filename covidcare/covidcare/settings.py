@@ -56,6 +56,7 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
 			BASE_DIR / "mainpage/templates",
+			BASE_DIR / "symptomrecorder/templates",
 		],
         'APP_DIRS': True,
         'OPTIONS': {
