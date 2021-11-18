@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+    
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static '/nav.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static '/form.css' %}">
+<img src="{% static 'covidcare4.png' %}" alt="COVID Care Logo"
+style="width:150px;height:150px;">
+<div class="topnav">
+    <p><a href="symptomrecorder">Symptom Recorder</a></p>
+    <p><a href="heatmap">COVID Case Heap Map</a></p>
+    <p><a href="dial911">Dial 911</a></p>
+    <p><a href="caregiver">Caregiver Request</a></p>
+    <p><a href="requestdelivery">Request Delivery</a></p>
+    <p><a href="requestpickup">Request Pickup</a></p>
+</div>
+<div class="container">
+<form>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname"><br>
+    <label>Start date of care:</label><br>
+    <input type="date" name="sday"><br>
+    <label>End date of care:</label><br>
+    <input type="date" name="eday">
+    <p><button>Submit</button></p>
+  </form> 
+</div>
+</body>
+</html>

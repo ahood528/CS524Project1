@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+    
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static '/nav.css' %}">
+<img src="{% static 'covidcare4.png' %}" alt="COVID Care Logo"
+style="width:150px;height:150px;">
+<h1>Welcome to COVID Care</h1>
+<div class="topnav">
+    <p><a href="symptomrecorder">Symptom Recorder</a></p>
+    <p><a href="heatmap">COVID Case Heap Map</a></p>
+    <p><a href="dial911">Dial 911</a></p>
+    <p><a href="{% url 'caregiver' %}">Caregiver Request</a></p>
+    <p><a href="requestdelivery">Request Delivery</a></p>
+    <p><a href="requestpickup">Request Pickup</a></p>
+</div>
+
+</body>
+</html>
